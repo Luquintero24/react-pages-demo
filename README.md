@@ -1,4 +1,4 @@
 # My Personal Website 
 
-For this website React was used
+I created this website using React, HTML, CSS and JavaScript to showcase my skills and previous experiences. Hope you like it!
 
