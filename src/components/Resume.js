@@ -1,12 +1,16 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
-import TTU from '../images/TTU.jpg';
+import TTU from '../images/Texas_Tech_Athletics_logo.svg.png';
 import ztm from '../images/ztmlogo.png';
 import excel from '../images/excel.png';
 import matlab from '../images/Matlab.png';
-
-
+import dell from '../images/delllogo.png';
+import patterson from '../images/patterson-logo.svg'
+import lockheed from '../images/lockheedmartin.png'
+import paycom from '../images/paycom.png'
+import codepath from '../images/codepath.jpeg'
+import hackwestx from '../images/hackwestx.png'
 export const Resume = () => {
 
 
@@ -34,29 +38,100 @@ export const Resume = () => {
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__backInLeft" : ""}>
                     <Tab.Pane eventKey="education">
-                      <div>
-                        <h1 className="mb-0">Texas Tech University </h1>
-                        <div className="subheading">Bachelor's degree,  Computer Science</div>
-                        <div className="subheading">Minor: Business</div>
+                      <div className="mb-4">
+                        {/* Texas Tech University */}
+                        <div className="d-flex align-items-center mb-2">
+                          <h1 className="mb-0 me-2">Texas Tech University</h1>
+                          <img src={TTU} alt="TTU" style={{ width: "75px", height: "75px" }} />
+                        </div>
+                        <div className="subheading">Bachelor's degree, Computer Science</div>
+                        <div className="subheading">Minor: Business & Math</div>
                         <div className="subheading">GPA: 4.0</div>
-                        <div className="subheading1">August 2022- August 2026</div>
-                        
-                        <img src={TTU} alt="TTU" />
+                        <div className="subheading1">August 2022 - August 2026</div>
+
+                        {/* CodePath at TTU */}
+                        <div className="d-flex align-items-center mt-3 mb-2">
+                          <h1 className="mb-0 me-2">CodePath at TTU</h1>
+                          <img src={codepath} alt="CODEPATH" style={{ width: "75px", height: "75px" }} />
+                        </div>
+                        <div className="subheading">President and TTU Chapter Founder</div>
+                        <div className="subheading1">May 2024 - Present</div>
                       </div>
-                      
+
+
                       
                     </Tab.Pane>
                     <Tab.Pane eventKey="experience">
                     <div class="timeline-block">
-                        <h1>IT Help Central- Texas Tech University</h1>
-                        <time>Student Analyst</time>
-                        <li>Working with customers through phone, e-mail, and in-person to provide support for a wide range of issues, including hardware, software, network troubleshooting, and account management.</li>
-                        <li>Position requires strong customer service skills, high attention to detail, and the ability to work with a diverse range of customers.</li>
-                        <time>2015 - 2019</time>
+                        <div className="d-flex align-items-center mb-2">
+                          <h1 className="mb-0 me-2">Dell Technologies - Hopkinton, MA</h1>
+                          <img src={dell} alt="DELL" style={{ width: "60px", height: "60px" }} />
+                        </div>
+
+                        <time>Software Engineer Intern</time>
+                        <li>Enhanced the Pacemaker validator tool for Dell’s PowerStore storage platform by expanding test coverage across critical control path components, improving validation accuracy by 80% and ensuring high availability in appliance deployment.</li>
+                        <li>Refactored the validator into a scalable, modular Python framework improving runtime efficiency by 50% and enabling full test suite execution across all PowerStore appliance configurations within CI/CD workflows using Jenkins, GitLab Runners, and Docker.</li>
+                        <li>Collaborated with engineers across DevOps and platform teams to ensure the validator supported dynamic microservice configurations and API-driven resource validation, helping prevent misconfiguration across incoming customer appliances.</li>
+                        <time>May 2025- August 2025</time>
                     </div>
-                    
+                    <div class="timeline-block">
+                        <div className="d-flex align-items-center mb-2">
+                          <h1 className="mb-0 me-2">Patterson-UTI - Houston, TX</h1>
+                          <img src={patterson} alt="PATTERSON" style={{ width: "150px", height: "60px" }} />
+                        </div>
+                        <time>Software Engineer Intern</time>
+                        <li>Achieved an accuracy rate of 80-85% by engineering a machine learning model using CNNs, K-means, AWS Textract, SciPy, and scikit-learn to automate text extraction and template classification from images, drastically reducing manual data entry in the sand delivery process for the fracturing line.</li>
+                        <li>Saved 350 hours per month by leveraging AWS Textract and regular expressions to optimize text extraction patterns, streamlining the sand delivery workflow and reducing manual entry by 80%.</li>
+                        <li>Utilized Amazon RDS with PostgreSQL for database management, SQL Alchemy as the ORM, AWS S3 for secure image storage, and deployed the model in a Docker container on an AWS EC2 instance. Retrieved and processed JSON data from an API, ensuring efficient and scalable operations.</li>
+                        <time>May 2024- August 2024</time>
+                    </div>
+                    <div class="timeline-block">
+                        <div className="d-flex align-items-center mb-2">
+                          <h1 className="mb-0 me-2">Lockheed Martin - Remote</h1>
+                          <img src={lockheed} alt="LOCKHEED" style={{ width: "190px", height: "50px" }} />
+                        </div>
+                        <time>Software Engineer Intern</time>
+                        <li>Achieved a 50% reduction in man-hours for documenting aircraft maintenance actions by developing software that streamlined fault documentation and generated repair documents.</li>
+                        <li>Engineered a machine learning model using Python, Transformers, and PyTorch with hierarchical clustering to create custom maintenance data entry templates. This model, leveraging past maintenance history and Technical Order data, enhanced fault and repair suggestions and was showcased through a user-friendly Streamlit interface.</li>
+                        <li>Improved operational efficiency by significantly reducing the time needed for aircraft maintenance documentation through the software solution.</li>
+                        <time>May 2023- December 2023</time>
+                    </div>
+                    <div class="timeline-block">
+                        <div className="d-flex align-items-center mb-2">
+                          <h1 className="mb-0 me-2">Rawls College - Lubbock, TX</h1>
+                          <img src={TTU} alt="TTU" style={{ width: "70px", height: "70px" }} />
+                        </div>
+                        <time>Full Stack Developer</time>
+                        <li>Developed web applications and handled web service requests in Microsoft Expression Web utilizing PHP, ASP.NET, HTML5, CSS and JavaScript.</li>
+                        <li>Created and maintained a new master database using SQL Server Management Studio (SSMS) for managing form requests for faculty and students at Rawls CoBA.</li>
+                        <li>Employed jQuery and JSON data to enhance client-side interactivity and streamline data exchanges.</li>
+                        <time>January 2024- Present</time>
+                    </div>
                     </Tab.Pane>
                     <Tab.Pane eventKey="awards">
+                       <div class="timeline-block">
+                          <h1>HackWesTX Winner</h1>
+                          <a><img src={hackwestx} alt=""></img></a>
+                          <time>Hackathon</time>
+                          <li>Third place in the HackWesTX hackathon with Waste Wise, an AI model that accurately predicts the optimal quantity of products a company should produce to minimize waste while maximizing profits.</li>
+                          <time>Fall 2023</time>
+                      </div>
+                      <div class="timeline-block">
+                          <h1>CodePath TIP102</h1>
+                          <a><img src={codepath} alt=""></img></a>
+                          <time>Apprenticeship</time>
+                          <li> Trained to solve challenging algorithm problems in real interviews at top companies, with dedicated 
+                          hands-on practice time with a pod of students.</li>
+                          <li>Mentorship from industry professionals and Info sessions from experienced engineers.</li>
+                          <time>May 2023 - Aug 2023</time>
+                      </div>
+                      <div class="timeline-block">
+                          <h1>Technology Summer Program</h1>
+                          <a><img src={paycom} alt=""></img></a>
+                          <time>Paycom</time>
+                          <li>Skills Learned: PHP · C# · React.js · DevOps · Git · Application Security · Containerization · Software Development Life Cycle (SDLC) · Java</li>
+                          <time>May 2023</time>
+                      </div>
                       <div class="timeline-block">
                           <h1>Data Structures and Algorithms</h1>
                           <a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-e1791088-82c5-4c8d-a5f3-f82e997085b7.pdf"><img src={ztm} alt=""></img></a>
