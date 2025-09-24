@@ -7,7 +7,9 @@ import projImg4 from "../images/wastewise.png";
 import projImg5 from "../images/lockheed.png";
 import projImg6 from "../images/bol.png";
 import projImg7 from "../images/movies.png";
-import projImg8 from "../images/portfolio.png"
+import projImg8 from "../images/portfolio.png";
+import projImg9 from "../images/kitchen.jpg";
+import projImg10 from "../images/nodary.jpg";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -60,6 +62,18 @@ export const Projects = () => {
       description: "My Personal portfolio made with React",
       imgUrl: projImg8,
       link: "https://github.com/Luquintero24/react-pages-demo"
+    },
+    {
+      title: "Kitchen",
+      description: "The highest level of programming in the market: a no-code, voice-first developer tool that transforms raw ideas into production-ready applications",
+      imgUrl: projImg9,
+      link: "https://github.com/Luquintero24/Kitchen"
+    },
+    {
+      title: "Nodary",
+      description: "This project turns unstructured emails into a knowledge graph, runs parallel analytics to spot risks, and delivers daily summaries for managers.",
+      imgUrl: projImg10,
+      link: "https://github.com/Luquintero24/HackwesTX25"
     }
   ];
 
