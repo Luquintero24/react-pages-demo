@@ -26,20 +26,36 @@ export const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setButtonText("Sending...");
-    let response = await fetch("http://localhost:5000/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json;charset=utf-8",
-      },
-      body: JSON.stringify(formDetails),
-    });
-    setButtonText("Send");
-    let result = await response.json();
-    setFormDetails(formInitialDetails);
-    if (result.code == 200) {
-      setStatus({ success: true, message: 'Message sent successfully'});
-    } else {
-      setStatus({ success: false, message: 'Something went wrong, please try again later.'});
+    
+    // For GitHub Pages deployment, use Formspree or similar service
+    // Replace 'YOUR_FORM_ID' with your actual Formspree form ID
+    const formspreeEndpoint = "https://formspree.io/f/xanpyayv";
+    
+    try {
+      let response = await fetch(formspreeEndpoint, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: `${formDetails.firstName} ${formDetails.lastName}`,
+          email: formDetails.email,
+          phone: formDetails.phone,
+          message: formDetails.message,
+        }),
+      });
+      
+      setButtonText("Send");
+      setFormDetails(formInitialDetails);
+      
+      if (response.ok) {
+        setStatus({ success: true, message: 'Message sent successfully!'});
+      } else {
+        setStatus({ success: false, message: 'Something went wrong, please try again later.'});
+      }
+    } catch (error) {
+      setButtonText("Send");
+      setStatus({ success: false, message: 'Network error. Please try again later.'});
     }
   };
 

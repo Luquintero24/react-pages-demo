@@ -62,7 +62,7 @@ export const Resume = () => {
                       
                     </Tab.Pane>
                     <Tab.Pane eventKey="experience">
-                    <div class="timeline-block">
+                    <div className="timeline-block">
                         <div className="d-flex align-items-center mb-2">
                           <h1 className="mb-0 me-2">Dell Technologies - Hopkinton, MA</h1>
                           <img src={dell} alt="DELL" style={{ width: "60px", height: "60px" }} />
@@ -74,7 +74,7 @@ export const Resume = () => {
                         <li>Collaborated with engineers across DevOps and platform teams to ensure the validator supported dynamic microservice configurations and API-driven resource validation, helping prevent misconfiguration across incoming customer appliances.</li>
                         <time>May 2025- August 2025</time>
                     </div>
-                    <div class="timeline-block">
+                    <div className="timeline-block">
                         <div className="d-flex align-items-center mb-2">
                           <h1 className="mb-0 me-2">Patterson-UTI - Houston, TX</h1>
                           <img src={patterson} alt="PATTERSON" style={{ width: "150px", height: "60px" }} />
@@ -85,7 +85,7 @@ export const Resume = () => {
                         <li>Utilized Amazon RDS with PostgreSQL for database management, SQL Alchemy as the ORM, AWS S3 for secure image storage, and deployed the model in a Docker container on an AWS EC2 instance. Retrieved and processed JSON data from an API, ensuring efficient and scalable operations.</li>
                         <time>May 2024- August 2024</time>
                     </div>
-                    <div class="timeline-block">
+                    <div className="timeline-block">
                         <div className="d-flex align-items-center mb-2">
                           <h1 className="mb-0 me-2">Lockheed Martin - Remote</h1>
                           <img src={lockheed} alt="LOCKHEED" style={{ width: "190px", height: "50px" }} />
@@ -96,7 +96,7 @@ export const Resume = () => {
                         <li>Improved operational efficiency by significantly reducing the time needed for aircraft maintenance documentation through the software solution.</li>
                         <time>May 2023- December 2023</time>
                     </div>
-                    <div class="timeline-block">
+                    <div className="timeline-block">
                         <div className="d-flex align-items-center mb-2">
                           <h1 className="mb-0 me-2">Rawls College - Lubbock, TX</h1>
                           <img src={TTU} alt="TTU" style={{ width: "70px", height: "70px" }} />
@@ -109,14 +109,14 @@ export const Resume = () => {
                     </div>
                     </Tab.Pane>
                     <Tab.Pane eventKey="awards">
-                       <div class="timeline-block">
+                       <div className="timeline-block">
                           <h1>HackWesTX Winner</h1>
                           <a><img src={hackwestx} alt=""></img></a>
                           <time>Hackathon</time>
                           <li>Third place in the HackWesTX hackathon with Waste Wise, an AI model that accurately predicts the optimal quantity of products a company should produce to minimize waste while maximizing profits.</li>
                           <time>Fall 2023</time>
                       </div>
-                      <div class="timeline-block">
+                      <div className="timeline-block">
                           <h1>CodePath TIP102</h1>
                           <a><img src={codepath} alt=""></img></a>
                           <time>Apprenticeship</time>
@@ -125,14 +125,14 @@ export const Resume = () => {
                           <li>Mentorship from industry professionals and Info sessions from experienced engineers.</li>
                           <time>May 2023 - Aug 2023</time>
                       </div>
-                      <div class="timeline-block">
+                      <div className="timeline-block">
                           <h1>Technology Summer Program</h1>
                           <a><img src={paycom} alt=""></img></a>
                           <time>Paycom</time>
                           <li>Skills Learned: PHP · C# · React.js · DevOps · Git · Application Security · Containerization · Software Development Life Cycle (SDLC) · Java</li>
                           <time>May 2023</time>
                       </div>
-                      <div class="timeline-block">
+                      <div className="timeline-block">
                           <h1>Data Structures and Algorithms</h1>
                           <a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-e1791088-82c5-4c8d-a5f3-f82e997085b7.pdf"><img src={ztm} alt=""></img></a>
                           <time>Certificate</time>
@@ -141,7 +141,7 @@ export const Resume = () => {
                           <li>Ace coding interviews given by some of the top tech companies.</li>
                           <time>December 2022</time>
                       </div>
-                      <div class="timeline-block">
+                      <div className="timeline-block">
                           <h1>Microsoft Excel Professional</h1>
                           <time href="file:///C:/Users/lmqr2/OneDrive/Documents/EXCEL/Certificate.pdf"><img src={excel} alt=""></img></time>
                           <time>Certificate</time>
@@ -149,7 +149,7 @@ export const Resume = () => {
                           <li>Diploma in business management, and organization with Microsoft Excel.</li>
                           <time>December 2022</time>
                       </div>
-                      <div class="timeline-block">
+                      <div className="timeline-block">
                           <h1>MatLab Programmer</h1>
                           <time href="file:///C:/Users/lmqr2/Downloads/MATLAB/Diploma%20MatLab.pdf"><img src={matlab} alt=""></img></time>
                           <time>Math Software Certificate</time>
@@ -157,7 +157,7 @@ export const Resume = () => {
                           <li>Management of its graphical interface (GUI), graphics, arrays and control structures.</li>
                           <time>January 2021</time>
                       </div>
-                      <div class="timeline-block">
+                      <div className="timeline-block">
                           <h1>President's Honor List</h1>
                           <time><img src={TTU} alt="TTU" /></time>
                           <time>Certificate</time>
@@ -165,7 +165,7 @@ export const Resume = () => {
                           <time></time>
                           <time>December 2022</time>
                       </div>
-                      <div class="timeline-block">
+                      <div className="timeline-block">
                           <h1>Presidential Merit Scholarship</h1>
                           <img src={TTU} alt="TTU" />
                           <time>Award</time>
